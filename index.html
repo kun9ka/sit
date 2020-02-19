@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Веб страница</title>
+    <style>
+        html{
+            background: url("ebk.png") no-repeat center center fixed;
+            background-size: cover;
+
+        }
+        .navbar {
+          overflow: hidden;
+          position: fixed; 
+          top: 0; 
+          width: 100%; 
+          backdrop-filter: blur(10px);
+          z-index: 1;
+          margin-bottom: 60px;
+        }
+
+        .navbar a {
+          float: left;
+          display: block;
+          color: #f2f2f2;
+          text-align: center;
+          padding: 14px 16px;
+          text-decoration: none;
+        }
+
+        .navbar a:hover {
+          transition: 1000ms;
+          background: #ddd;
+          backdrop-filter: brightness(70%);
+        }
+
+        .main {
+          margin-top: 30px; 
+        }
+        .card {
+          box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+          transition: 0.3s;
+          backdrop-filter: blur(100px);
+          color: white;
+          width: 75%;
+          position: relative;
+          text-align: center;
+          margin: auto;
+          font-size: 25pt;
+          margin-top: 60px;
+          padding: 20px 20px 20px 20px;
+        }
+
+        .card:hover {
+          box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+        }
+
+        .container {
+          padding: 2px 16px;
+        }
+        footer{
+            text-align: center;
+        }
+        .pic{
+            width: 400px;
+            height: 200px;
+        }
+        .parent-element-to-video {
+            overflow: hidden;
+        }
+        video {
+            position: fixed;
+            top: 0;
+            z-index: -100;
+            height: 100%;
+            width: 177.77777778vh; /* 100 * 16 / 9 */
+            min-width: 100%;
+            min-height: 56.25vw; /* 100 * 9 / 16 */
+        }
+    </style>
+</head>
+<body>
+    <!-- <div class="bg"> -->
+    <video id="vid" video autoplay muted loop>
+      <source id="mp4" src="vid.mp4" type="video/mp4">
+    </video>
+    <!-- </div> -->
+    <div class="navbar">
+      <a href="#section1">Header1</a>
+      <a href="#section2">Header2</a>
+      <a href="#section3">Header3</a>
+    </div>
+    <div id="section1" class="card">
+      <div class="container">
+        <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum id accumsan justo, vitae imperdiet lacus. Mauris ut commodo velit. Sed interdum pulvinar vulputate. Sed tincidunt turpis nec hendrerit tincidunt. Etiam leo orci, auctor ac aliquam eu, malesuada et erat. Vestibulum at augue in justo maximus suscipit. Donec vehicula lorem quis arcu malesuada, non semper nunc viverra. Nulla euismod in sem a convallis. Sed aliquet lectus at malesuada molestie. Etiam elit enim, pulvinar a erat eget, tristique elementum justo. Cras cursus est non felis posuere, tincidunt lacinia metus egestas. Suspendisse justo tortor, luctus nec neque et, fermentum dapibus orci. Quisque sagittis mi in elit rutrum tempus. Integer volutpat lorem vel rutrum tincidunt.
+
+                Maecenas sed dolor ligula. Phasellus sit amet lorem eu velit condimentum dignissim id nec purus. Phasellus maximus eleifend orci non faucibus. In hac habitasse platea dictumst. Sed bibendum, tortor a rutrum porttitor, erat odio mattis lorem, a euismod mauris sem ut enim. Ut dapibus tempus fringilla. Cras molestie justo magna, id accumsan arcu ullamcorper bibendum. Maecenas et lacus dolor. Ut pulvinar sollicitudin quam varius bibendum. Phasellus lacinia vitae eros vitae tempor. Donec eleifend fermentum bibendum.
+
+                Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Cras congue ex aliquet, iaculis ligula nec, laoreet magna. In sodales, nisi a vehicula semper, metus felis lobortis purus, et molestie risus lacus et neque. Vivamus ac dui dolor. Integer rhoncus ante ut aliquet sodales. Praesent et gravida quam. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+
+                Pellentesque ligula velit, imperdiet eu facilisis a, pretium vel ex. Curabitur maximus erat sit amet ullamcorper pulvinar. Aenean enim lectus, tempus a dui quis, ornare finibus lectus. Praesent dignissim tempus dolor, ut gravida urna vulputate vel. Maecenas eu turpis maximus, pulvinar nunc a, congue arcu. Donec sollicitudin massa nisi, ac mattis metus condimentum non. Mauris at facilisis nunc, non hendrerit lacus. Etiam urna est, congue nec purus ac, ultrices consectetur nisi. Donec porttitor arcu vel turpis consequat, lacinia rutrum arcu consequat. Mauris sed euismod mauris. Integer eget augue auctor, blandit erat eu, egestas est. Vestibulum ultrices erat sed nunc cursus iaculis. Quisque eget pulvinar augue. Sed tincidunt condimentum ipsum, quis blandit lectus porttitor in. Maecenas molestie malesuada erat sed accumsan. Quisque malesuada dapibus odio, a dapibus ipsum dictum in.
+
+                Mauris posuere erat sapien, sit amet iaculis dui aliquam in. Phasellus convallis lorem erat, vel ultricies nunc sollicitudin a. Curabitur eu tortor quis ex commodo sodales. Phasellus vitae orci ut turpis molestie facilisis. Nullam sit amet lacus lorem. Curabitur ac augue eros. Nulla placerat nec odio vitae scelerisque. Phasellus eget maximus arcu.
+    </p>
+  </div>
+</div>
+
+<div id="section2" class="card">
+      <div class="container">
+        <img class="pic" src="1.jpg">
+        <img class="pic" src="2.jpg">
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis mollis, urna varius porta aliquet, purus ex elementum ligula, sed maximus tellus arcu ac turpis. Suspendisse at purus sollicitudin, ultrices risus ullamcorper, vehicula erat. Morbi sodales sed lacus et auctor. Morbi varius orci sed pretium sagittis. Donec convallis dignissim risus, at sagittis lacus laoreet sodales. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Proin blandit iaculis tellus in convallis. Proin pulvinar felis eget erat porta egestas. Proin blandit aliquet nunc, eget iaculis erat iaculis ac. Nam egestas, urna sit amet sollicitudin vestibulum, tellus nunc maximus turpis, eu euismod massa enim eu metus.
+
+        Integer at erat fermentum, rhoncus arcu id, laoreet ex. Morbi sed turpis scelerisque, dignissim lorem ac, mattis augue. Nulla eget lectus id libero bibendum ullamcorper sed quis ligula. Fusce a lacus non neque porta mattis. Nulla nulla sapien, mollis et bibendum at, eleifend vel nunc. Praesent dapibus odio et elit euismod vulputate. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Cras scelerisque rutrum ex porttitor finibus. Praesent dictum tempor nisi, vitae ornare erat mattis a.
+
+        Donec et purus facilisis, convallis est at, sagittis justo. Duis blandit purus odio, ac tincidunt leo pulvinar non. Vivamus tellus nunc, tempor non laoreet ut, ullamcorper et leo. Integer eu sapien a ligula vehicula mollis. Ut scelerisque fringilla tortor, sed fringilla odio iaculis eget. Donec pharetra maximus erat nec convallis. Duis a aliquam felis.
+
+        Donec sit amet dictum diam. Ut hendrerit gravida magna. Praesent eu mauris congue, maximus elit at, pharetra tellus. Morbi pretium augue vitae dapibus malesuada. Quisque eget feugiat ante. Curabitur malesuada lectus leo, a volutpat ipsum varius ut. Nam suscipit sed sem vel consequat. Nullam ac placerat lorem. Sed cursus mollis leo, id molestie nibh hendrerit at. Nullam pharetra nisl ligula, at convallis leo facilisis eget. Pellentesque vehicula accumsan porta. Nunc dolor urna, pharetra at iaculis ut, laoreet nec ex. Duis pretium egestas eros, in mollis elit posuere non. Sed tincidunt molestie risus vitae varius.
+
+        Suspendisse porta convallis venenatis. Suspendisse fringilla erat vel purus mollis finibus. Praesent viverra nunc in quam dignissim, eget ullamcorper nibh pellentesque. Aliquam erat volutpat. Nulla nec quam congue neque ornare volutpat. Vivamus dignissim mattis tellus sed semper. In orci mauris, auctor in velit quis, iaculis fringilla diam. Cras ut sagittis lectus. Aenean ex libero, scelerisque nec imperdiet in, ornare vel sem. Morbi dapibus purus sed erat convallis tempor. In hac habitasse platea dictumst. Praesent quis eros et ex dictum faucibus ut sit amet velit. In et pharetra ligula.
+        </p>
+    </div>
+</div>
+
+<div id="section3" class="card">
+      <div class="container">
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse sit amet ligula varius, consequat erat et, scelerisque turpis. Nam vel sem posuere, suscipit leo eu, convallis metus. Suspendisse orci nisl, varius ultrices felis et, laoreet laoreet est. Integer molestie, tortor vitae fermentum gravida, sapien libero tristique diam, non sagittis odio risus vel ante. Proin id sem metus. Pellentesque scelerisque ac diam sed pulvinar. Duis finibus luctus sodales. Nulla condimentum, sapien ac pulvinar sodales, ex sem gravida eros, eu tincidunt dui nibh eget diam. Integer et augue non turpis lacinia convallis sit amet eu odio. Aenean quam leo, vestibulum sodales risus mollis, bibendum pulvinar justo. Nam nec tempor felis. Fusce ac turpis mauris. Donec feugiat ipsum et ipsum elementum tristique. Nulla vitae turpis id sem tincidunt efficitur. Interdum et malesuada fames ac ante ipsum primis in faucibus. Suspendisse bibendum quam in eros vehicula volutpat.
+
+            Proin vestibulum quam lacus, id congue libero laoreet eu. Fusce placerat vehicula sem, vel maximus lacus sollicitudin non. Phasellus et purus placerat, tempus mauris non, dictum enim. Integer ultricies ante vitae porta gravida. Aliquam ac nulla nec dolor ullamcorper pretium eleifend a enim. Nam rutrum ac nulla eget sollicitudin. Fusce gravida eleifend dolor non volutpat. Aliquam erat volutpat. Phasellus ornare neque ut aliquet laoreet.
+
+            In hac habitasse platea dictumst. Donec sed arcu eros. Nunc rutrum feugiat quam, ut tincidunt libero pretium varius. Vestibulum rutrum aliquet erat sit amet accumsan. Donec non lorem hendrerit, vehicula dolor in, sagittis ipsum. In egestas tellus nec leo dictum viverra. Nullam eu dui tristique, fringilla dui quis, auctor tellus. Suspendisse scelerisque malesuada elit, sed lobortis lectus sollicitudin ut. Curabitur vel libero sed neque vehicula porta eu nec mi. Etiam non risus ac urna accumsan pharetra nec non magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Cras eget sodales lectus, et lacinia lectus. Aenean non ultrices ante, ut laoreet justo. Pellentesque ac sagittis elit.
+
+            Proin eu metus velit. Donec sit amet felis ut nisl luctus vehicula. In vestibulum pretium ipsum, eget vehicula turpis vehicula ac. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Pellentesque nec interdum enim. Curabitur et neque eu lorem scelerisque malesuada. Aliquam viverra accumsan dignissim. Nam sed lacus purus. Sed dapibus sodales eros, ut porttitor leo gravida a. Nam feugiat facilisis hendrerit. Cras dignissim leo eget augue sagittis fringilla. Morbi laoreet enim ac varius porttitor. Vestibulum in porttitor ex, a euismod est. Quisque viverra luctus ipsum, a mattis sem venenatis vitae. Nunc ultrices mollis neque in mattis.
+
+            Vestibulum vel gravida dui. Proin pellentesque arcu ex, sit amet suscipit sem auctor accumsan. Etiam felis magna, auctor vitae magna eget, ullamcorper tempus ipsum. Ut quis augue nec augue aliquet facilisis ut id lacus. Fusce finibus rutrum libero, sollicitudin sagittis lacus feugiat eu. Aenean fermentum ligula nec lacinia mattis. Aliquam condimentum ante ut ultrices tristique.
+        </p>
+    </div>
+</div>
+<script>
+    var muz = new Audio('media_file.mp3');
+    document.addEventListener("click", function(){
+        muz.play();
+        document.getElementById("myVideo").play();
+    })
+</script>
+</body>
+<footer>
+    &copy;2020 Все права не защищены свяжитесь с нами.
+</footer>
+</html>
